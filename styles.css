@@ -1,0 +1,192 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+    interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+/* end of reset */
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: "Norse", Verdana, sans-serif;
+}
+
+#sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url("assets/background.avif");
+    background-size: cover;
+    width: 30vw;
+    flex: none;
+}
+
+#sidebar * {
+    color: white;
+}
+
+#logo {
+    background-color: rgb(0 0 0 / 30%);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20vh;
+    width: 100%;
+}
+
+#logo h1, #logo h1 img {
+    height: 5rem;
+    font-size: 5rem;
+}
+
+#logo h1 img {
+    display: inline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    width: 100%;
+}
+
+#body {
+    padding: 15vh 0;
+    background-color: #F9FAFB;
+}
+
+#hero h2 {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+#signup-container {
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
+    padding: 0 40px;
+}
+
+#signup-container h2 {
+    padding: 20px 0;
+}
+
+#form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: block;
+    color: #333;
+}
+
+input {
+    width: 250px;
+    margin-right: 50px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 20%);
+    outline: none;
+}
+
+button,
+form + p {
+    margin: 40px 0 0 40px;
+}
+
+button {
+    width: 200px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+}
+
+#body a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+}
